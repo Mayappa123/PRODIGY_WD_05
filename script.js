@@ -26,12 +26,29 @@ function displayWeather(data) {
   const weatherResult = document.getElementById("weather-result");
   weatherResult.innerHTML = `
         <h2>${data.name}, ${data.sys.country}</h2>
-        <p>Temperature: ${data.main.temp}°C</p>
-        <p>Weather: ${data.weather[0].description}</p>
-        <p>Humidity: ${data.main.humidity}%</p>
-        <p>Wind Speed: ${data.wind.speed} m/s</p>
+        <p>Latitude: ${data.coord.lat}, Longitude: ${data.coord.lon}</p>
+        <table>
+            <tr>
+                <td><i class="fas fa-thermometer-half"></i> Temperature</td>
+                <td>${data.main.temp}°C</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-cloud"></i> Weather</td>
+                <td>${data.weather[0].description}</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-tint"></i> Humidity</td>
+                <td>${data.main.humidity}%</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-wind"></i> Wind Speed</td>
+                <td>${data.wind.speed} m/s</td>
+            </tr>
+        </table>
     `;
 }
+
+
 
 function showError(message) {
   const errorMessage = document.getElementById("error-message");
