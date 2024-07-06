@@ -33,7 +33,7 @@ A simple and visually appealing weather application that allows users to search 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/weather-app.git
+    git clone https://github.com/Mayappa123/PRODIGY_WD_05.git
     cd weather-app
     ```
 
@@ -49,7 +49,7 @@ A simple and visually appealing weather application that allows users to search 
 
 ### API Key
 
-This application uses the OpenWeatherMap API. To fetch weather data, you need an API key. Replace `your_api_key_here` in the `script.js` file with your actual API key from OpenWeatherMap.
+This application uses the OpenWeatherMap API. To fetch weather data, you need an API key. Replace `API_KEY` in the `script.js` file with your actual API key from OpenWeatherMap.
 
 ```javascript
-const apiKey = "your_api_key_here";
+const apiKey = "API_KEY";
