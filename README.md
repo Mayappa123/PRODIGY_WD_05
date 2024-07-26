@@ -35,7 +35,14 @@ Check out the live demo [here](https://Mayappa123.github.io/PRODIGY_WD_05/).
     cd PRODIGY_WD_05
     ```
 
-3. Open the `index.html` file in your browser to run the app locally.
+3. Create a `config.js` file in the root of your project and add your OpenWeatherMap API key:
+
+    ```javascript
+    const API_KEY = "your_openweathermap_api_key";
+    export default API_KEY;
+    ```
+
+4. Open the `index.html` file in your browser to run the app locally.
 
 ## Usage
 

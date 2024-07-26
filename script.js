@@ -1,5 +1,6 @@
+import API_KEY from "./config.js";
+
 async function getWeather() {
-  const apiKey = "639ad97974b80802cdcf530e90178fa7";
   const city = document.getElementById("city-input").value;
   const result = document.getElementsByClassName("weather-result")[0];
 
@@ -18,7 +19,7 @@ async function getWeather() {
     return;
   }
 
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
 
   try {
     const response = await fetch(apiUrl);
