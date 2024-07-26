@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
     <div class="container">
-        <h1>Weather App</h1>
-        <div class="search-box">
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button onclick="getWeather()">Search</button>
-        </div>
-        <div id="error-message" style="color: red; display: none;"></div>
-        <div id="weather-result"></div>
+      <h1>WEATHER APP</h1>
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="search city" />
+        <button onclick="getWeather()">Search</button>
+      </div>
+      <div id="weather-result" class="weather-result"></div>
+      <button id="clear-button" style="display: none;">Clear</button>
     </div>
-    <script src="script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
